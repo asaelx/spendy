@@ -16,6 +16,7 @@ class CreateGoalsTable extends Migration
         Schema::create('goals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('image');
             $table->float('amount');
             $table->float('saved');
             $table->float('deposit');
